@@ -5,9 +5,11 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
         <link href="css/index.css" rel="stylesheet"/>
+        <script src="https://cdn.jsdelivr.net/npm/vue"></script>
     </head>
     <body>
-        <div class="container">
+        <div id="container" class="container">
+            <a v-for="todo in todos" :href="todo.url">{{ todo.text }}</a>
             <a href="https://segmentfault.com/a/1190000009592068" target="_blank"> WEB前端面试题汇总（JS）</a><br>
             <a href="https://segmentfault.com/a/1190000011038090" target="_blank"> 你不能错过的前端面试题合集 </a><br>
             <a href="http://www.codeceo.com/article/web-interview-collection.html" target="_blank"> Web前端面试题目及答案汇总 </a><br>
@@ -15,4 +17,16 @@
             <a href="https://zhuanlan.zhihu.com/p/21417465" target="_blank"> 唯快不破：Web应用的13个优化步骤 </a>
         </div>
     </body>
+    <script type='text/javascript'>
+        new Vue({
+          el: '#container',
+          data: {
+            todos: [
+              { url:'https://segmentfault.com/a/1190000009592068', text: '学习 JavaScript' },
+              { url:'https://segmentfault.com/a/1190000009592068', text: '学习 Vue' },
+              { url:'https://segmentfault.com/a/1190000009592068', text: '整个牛项目' }
+            ]
+          }
+        })
+    </script>
 </html>
