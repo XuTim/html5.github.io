@@ -92,3 +92,7 @@ p{
     color: #009a61;
     border-bottom: 1px solid #009a61;
 }
+.container>ul{
+    float: left;
+    width:50%;
+}
