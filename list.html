@@ -9,16 +9,16 @@
     </head>
     <body>
         <div id="container" class="container">
-            <lu>
+            <ul>
                 <li v-for="todo in todos">
                     <a :href="todo.url">{{ todo.text }}</a>
                 </li>
-            </lu>
-            <lu>
+            </ul>
+            <ul>
                 <li v-for="vue in vues">
                     <a :href="vue.url">{{ vue.text }}</a>
                 </li>
-            </lu>
+            </ul>
         </div>
     </body>
     <script type='text/javascript'>
