@@ -9,12 +9,7 @@
     </head>
     <body>
         <div id="container" class="container">
-            <a v-for="todo in todos" :href="todo.url">{{ todo.text }}</a>
-            <a href="https://segmentfault.com/a/1190000009592068" target="_blank"> WEB前端面试题汇总（JS）</a><br>
-            <a href="https://segmentfault.com/a/1190000011038090" target="_blank"> 你不能错过的前端面试题合集 </a><br>
-            <a href="http://www.codeceo.com/article/web-interview-collection.html" target="_blank"> Web前端面试题目及答案汇总 </a><br>
-            <a href="http://www.cnblogs.com/qianduantuanzhang/p/7789059.html" target="_blank"> 2017最新前端面试题 </a><br>
-            <a href="https://zhuanlan.zhihu.com/p/21417465" target="_blank"> 唯快不破：Web应用的13个优化步骤 </a>
+            <a v-for="todo in todos" :href="todo.url">{{ todo.text }}</a><br>
         </div>
     </body>
     <script type='text/javascript'>
@@ -22,9 +17,12 @@
           el: '#container',
           data: {
             todos: [
-              { url:'https://segmentfault.com/a/1190000009592068', text: '学习 JavaScript' },
-              { url:'https://segmentfault.com/a/1190000009592068', text: '学习 Vue' },
-              { url:'https://segmentfault.com/a/1190000009592068', text: '整个牛项目' }
+              { url:'https://segmentfault.com/a/1190000009592068', text: ' WEB前端面试题汇总（JS）' },
+              { url:'https://segmentfault.com/a/1190000011038090', text: ' 你不能错过的前端面试题合集 ' },
+              { url:'http://www.codeceo.com/article/web-interview-collection.html', text: ' Web前端面试题目及答案汇总 ' },
+              { url:'http://www.cnblogs.com/qianduantuanzhang/p/7789059.html', text: ' 2017最新前端面试题 ' },
+              { url:'http://www.cnblogs.com/qianduantuanzhang/p/7789059.html', text: ' 2017最新前端面试题 ' },
+              { url:'https://zhuanlan.zhihu.com/p/21417465', text: ' 唯快不破：Web应用的13个优化步骤 ' }
             ]
           }
         })
