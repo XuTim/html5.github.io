@@ -9,7 +9,11 @@
     </head>
     <body>
         <div id="container" class="container">
-            <a v-for="todo in todos" :href="todo.url">{{ todo.text }}</a><br>
+            <lu>
+                <li v-for="todo in todos">
+                    <a :href="todo.url">{{ todo.text }}</a>
+                </li>
+            </lu>
         </div>
     </body>
     <script type='text/javascript'>
