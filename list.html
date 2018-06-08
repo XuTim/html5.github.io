@@ -23,9 +23,7 @@
         </div>
     </body>
     <script type='text/javascript'>
-        new Vue({
-          el: '#container',
-          data: {
+        var dataC = {
             todos: [
               { url:'https://segmentfault.com/a/1190000009592068', text: ' WEB前端面试题汇总（JS）' },
               { url:'https://segmentfault.com/a/1190000011038090', text: ' 你不能错过的前端面试题合集 ' },
@@ -40,7 +38,10 @@
                 { url:'https://www.imooc.com/learn/694', text: ' 慕课网 - vue.js入门基础 ' },
                 { url:'https://segmentfault.com/a/1190000006776243?utm_source=tuicool&utm_medium=referral', text: ' 一个简单的 vue.js 实践教程 ' }
             ]
-          }
+          };
+        new Vue({
+          el: '#container',
+          data: dataC
         })
     </script>
 </html>
